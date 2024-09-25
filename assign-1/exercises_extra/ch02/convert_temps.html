@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="convert_temps.css">
+</head>
+<body>
+    <main>
+        <h1>Convert from Fahrenheit to Celsius</h1>
+            <script>
+        
+                "use strict"; // enable strict mode
+                
+                // Prompt the user to enter a Fahrenheit temperature and convert to floating-point number
+                let fahrenheit = parseFloat(prompt("Enter a temperature between -101\u2109 and 212\u2109 (Enter 999 to exit:)"));
+        
+                // Convert Fahrenheit to Celsius
+                let celsius = (fahrenheit - 32) * 5 / 9;
+        
+                // Display the result (rounded to one decimal place)
+                const html = `<p>${fahrenheit.toFixed(1)}\u2109 = ${celsius.toFixed(1)}\u2103</p>`;
+                document.write(html);
+                
+                    
+                
+                // while (fahrenheit != 999 || (isNaN(fahrenheit)) || (fahrenheit < -101 || fahrenheit > 212));
+        </script>
+    </main>
+</body>
+</html>
